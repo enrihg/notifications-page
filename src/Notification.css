@@ -1,0 +1,30 @@
+.Notification {
+    display: flex;
+    align-items: center;
+    background-color:hsl(210, 60%, 98%);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+
+    a {
+        color: hsl(224, 21%, 14%);
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    img {
+        width: 39px;
+        height: 39px;
+        margin-right: 0.8125rem;
+    }
+
+    .Text {
+        color: hsl(219, 12%, 42%);
+    }
+
+    .Time {
+        color:  hsl(219, 14%, 63%);
+    }
+
+}
+
