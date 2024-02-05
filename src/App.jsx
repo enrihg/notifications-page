@@ -1,6 +1,66 @@
 import Notification from './Notification';
 import './App.css'
 
+const data = [
+  {
+    id: 0,
+    user: 'Mark Webber',
+    pic: './src/assets/images/avatar-mark-webber.webp',
+    msg: 'esto es una notificación',
+    time: '1m'
+  },
+
+  {
+    id: 1,
+    user: 'Angela Gray',
+    pic: './src/assets/images/avatar-angela-gray.webp',
+    msg: 'esto es una notificación',
+    time: '5m'
+  },
+
+  {
+    id: 2,
+    user: 'Jacob Thompson',
+    pic: './src/assets/images/avatar-jacob-thompson.webp',
+    msg: 'esto es una notificación',
+    time: '1 day'
+  },
+
+  {
+    id: 3,
+    user: 'Rizky Hasanuddin',
+    pic: './src/assets/images/avatar-rizky-hasanuddin.webp',
+    msg: 'esto es una notificación',
+    time: '5 days'
+  },
+
+  {
+    id: 4,
+    user: 'Kimberly Smith',
+    pic: './src/assets/images/avatar-kimberly-smith.webp',
+    msg: 'esto es una notificación',
+    time: '1 week'
+  },
+
+  {
+    id: 5,
+    user: 'Nathan Peterson',
+    pic: './src/assets/images/avatar-nathan-peterson.webp',
+    msg: 'esto es una notificación',
+    time: '2 weeks'
+  },
+
+  {
+    id: 6,
+    user: 'Anna Kim',
+    pic: './src/assets/images/avatar-anna-kim.webp',
+    msg: 'esto es una notificación',
+    time: '2 weeks'
+  },
+
+]
+
+
 function App() {
 
   return (
@@ -12,13 +72,10 @@ function App() {
         </div>
         <button>Mark all as read</button>
       </header>
-      <Notification pic="./src/assets/images/avatar-mark-webber.webp" name="Mark Webber" time="1m" />
-      <Notification pic="./src/assets/images/avatar-angela-gray.webp" name="Angela Gray" time="5m" />
-      <Notification pic="./src/assets/images/avatar-jacob-thompson.webp" name="Jacob Thompson" time="1 day" />
-      <Notification pic="./src/assets/images/avatar-rizky-hasanuddin.webp" name="Rizky Hasanuddin" time="5 days" />
-      <Notification pic="./src/assets/images/avatar-kimberly-smith.webp" name="Kimberly Smith" time="1 week" />
-      <Notification pic="./src/assets/images/avatar-nathan-peterson.webp" name="Nathan Peterson" time="2 weeks" />
-      <Notification pic="./src/assets/images/avatar-anna-kim.webp" name="Anna Kim" time="2 weeks" />
+
+      {data.map(person =>
+        <Notification key={person.id} user={person.user} pic={person.pic} msg={person.msg} time={person.time} />)}
+
     </div>
   )
 }
