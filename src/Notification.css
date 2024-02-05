@@ -1,7 +1,6 @@
 .Notification {
     display: flex;
     align-items: center;
-    background-color:hsl(210, 60%, 98%);
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 1rem;
@@ -23,8 +22,20 @@
     }
 
     .Time {
-        color:  hsl(219, 14%, 63%);
+        color: hsl(219, 14%, 63%);
     }
 
-}
+    &.Unread {
+        background-color: hsl(210, 60%, 98%);
 
+        .Text::after {
+            content: '🔴'; 
+            margin-left: 5px;
+        }
+    }
+
+    &.Read {
+        /* background-color: brown; */
+        background-color: hsl(0, 0%, 100%);
+    }
+}
