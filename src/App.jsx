@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Notification from './Notification';
 import './App.css';
 
@@ -8,7 +9,7 @@ const data = [
     pic: './src/assets/images/avatar-mark-webber.webp',
     msg: 'reacted to your recent post My first tournament today',
     time: '1m',
-    unread: true /*es necesario? */
+    unread : true
   },
 
   {
@@ -17,7 +18,7 @@ const data = [
     pic: './src/assets/images/avatar-angela-gray.webp',
     msg: 'followed you',
     time: '5m',
-    unread: true /*es necesario? */
+    unread : true
   },
 
   {
@@ -26,7 +27,7 @@ const data = [
     pic: './src/assets/images/avatar-jacob-thompson.webp',
     msg: 'has joined your group Chess Club',
     time: '1 day',
-    unread: true /*es necesario? */
+    unread : true
   },
 
   {
@@ -35,7 +36,7 @@ const data = [
     pic: './src/assets/images/avatar-rizky-hasanuddin.webp',
     msg: 'sent you a private message',
     time: '5 days',
-    unread: true /*es necesario? */
+    unread : true
   },
 
   {
@@ -44,7 +45,7 @@ const data = [
     pic: './src/assets/images/avatar-kimberly-smith.webp',
     msg: 'commented on your picture',
     time: '1 week',
-    unread: true  /*es necesario? */
+    unread : true
   },
 
   {
@@ -53,7 +54,7 @@ const data = [
     pic: './src/assets/images/avatar-nathan-peterson.webp',
     msg: 'reacted to your recent post 5 end-game strategies to increase your win rate',
     time: '2 weeks',
-    unread: true /*es necesario? */
+    unread : true
   },
 
   {
@@ -62,28 +63,45 @@ const data = [
     pic: './src/assets/images/avatar-anna-kim.webp',
     msg: 'left the group Chess Club',
     time: '2 weeks',
-    unread: true  /*es necesario? */
+    unread : true
   },
-
 ]
 
-
 function App() {
+
+  const [total, setTotal] = useState(data.length);
+
+  function clear(id){
+    if(data[id].unread && total > 0){
+      setTotal(total - 1);
+      data[id].unread ? data[id].unread = false : null;
+    }
+  }
+
+  function clearAll(){
+    for(let user of data) {
+      clear(user.id);
+    }
+    setTotal(0);
+  }
 
   return (
     <div className='Wrapper'>
       <header>
         <div>
           <h1>Notifications</h1>
-          <span className='Counter'>3</span>
+          <span className='Counter'>{total}</span>
         </div>
-        <button>Mark all as read</button>
+        <button onClick={clearAll}>Mark all as read</button>
       </header>
 
       {data.map(person =>
-      <Notification key={person.id} user={person.user} pic={person.pic} msg={person.msg} 
-      time={person.time} />)}
-
+        <div key={person.id}  onClick={() => clear(person.id)}>
+          <Notification key={person.id} user={person.user} pic={person.pic} msg={person.msg}
+            time={person.time} className={`Notification ${person.unread ? 'Unread' : 'Read'}`}
+          />
+        </div>
+      )}
     </div>
   )
 }

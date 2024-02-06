@@ -35,7 +35,6 @@
     }
 
     &.Read {
-        /* background-color: brown; */
         background-color: hsl(0, 0%, 100%);
     }
 }
