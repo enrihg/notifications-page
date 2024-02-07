@@ -3,8 +3,11 @@
         "id": 0,
         "user": "Mark Webber",
         "pic": "./src/assets/images/avatar-mark-webber.webp",
-        "msg": "reacted to your recent post My first tournament today",
+        "msg": "reacted to your recent post",
         "time": "1m",
+        "content": null,
+        "link": "My first tournament today",
+        "commentedPic": null,
         "unread": true
     },
     {
@@ -13,14 +16,20 @@
         "pic": "./src/assets/images/avatar-angela-gray.webp",
         "msg": "followed you",
         "time": "5m",
+        "content": null,
+        "link": null,
+        "commentedPic": null,
         "unread": true
     },
     {
         "id": 2,
         "user": "Jacob Thompson",
         "pic": "./src/assets/images/avatar-jacob-thompson.webp",
-        "msg": "has joined your group Chess Club",
+        "msg": "has joined your group",
         "time": "1 day",
+        "content": null,
+        "link": "Chess Club",
+        "commentedPic": null,
         "unread": true
     },
     {
@@ -29,6 +38,9 @@
         "pic": "./src/assets/images/avatar-rizky-hasanuddin.webp",
         "msg": "sent you a private message",
         "time": "5 days",
+        "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and i'm already having lots of fun and improving my game.",
+        "link": null,
+        "commentedPic": null,
         "unread": true
     },
     {
@@ -37,22 +49,31 @@
         "pic": "./src/assets/images/avatar-kimberly-smith.webp",
         "msg": "commented on your picture",
         "time": "1 week",
+        "content": null,
+        "link": null,
+        "commentedPic": "./src/assets/images/image-chess.webp",
         "unread": true
     },
     {
         "id": 5,
         "user": "Nathan Peterson",
         "pic": "./src/assets/images/avatar-nathan-peterson.webp",
-        "msg": "reacted to your recent post 5 end-game strategies to increase your win rate",
+        "msg": "reacted to your recent post",
         "time": "2 weeks",
+        "content": null,
+        "link": "5 end-game strategies to increase your win rate",
+        "commentedPic": null,
         "unread": true
     },
     {
         "id": 6,
         "user": "Anna Kim",
         "pic": "./src/assets/images/avatar-anna-kim.webp",
-        "msg": "left the group Chess Club",
+        "msg": "left the group",
         "time": "2 weeks",
+        "content": null,
+        "link": "Chess Club",
+        "commentedPic": null,
         "unread": true
     }
 ]

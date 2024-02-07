@@ -8,9 +8,9 @@ body {
   display: grid;
   align-items: center;
   height: 100vh;
- 
   background-color: hsl(210, 60%, 98%);
   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
 }
 
 .Wrapper {
@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -37,11 +37,14 @@ h1 {
 
 button {
   cursor: pointer;
-  /* color: hsl(219, 12%, 42%); */
-  color: hsl(219, 85%, 26%);
+  color: hsl(219, 12%, 42%);
   border-style: none;
   background-color: initial;
   font-weight: 500;
+
+  &:hover {
+    color: hsl(219, 85%, 26%);
+}
 }
 
 .Counter {

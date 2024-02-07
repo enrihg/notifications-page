@@ -33,8 +33,16 @@ function App() {
 
       {data.map(person =>
         <div key={person.id}  onClick={() => clear(person.id)}>
-          <Notification key={person.id} user={person.user} pic={person.pic} msg={person.msg}
-            time={person.time} className={`Notification ${person.unread ? 'Unread' : 'Read'}`}
+          <Notification 
+            key={person.id} 
+            user={person.user} 
+            pic={person.pic} 
+            msg={person.msg}
+            time={person.time} 
+            content={person.content} 
+            link={person.link}
+            commentedPic={person.commentedPic}
+            className={person.unread ? 'Unread' : 'Read'}
           />
         </div>
       )}

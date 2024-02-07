@@ -1,14 +1,29 @@
 .Notification {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: space-between;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 1rem;
 
+    .flex {
+        display: flex;
+    }
+
     a {
-        color: hsl(224, 21%, 14%);
         font-weight: 900;
         text-decoration: none;
+
+        &.User {
+            color: hsl(224, 21%, 14%);
+        }
+
+        &.Link {
+            color: hsl(219, 12%, 42%);
+        }
+        &:hover {
+            color: hsl(219, 85%, 26%);
+        }
     }
 
     img {
@@ -28,13 +43,26 @@
     &.Unread {
         background-color: hsl(210, 60%, 98%);
 
-        .Text::after {
-            content: '🔴'; 
+        .Link::after {
+            content: url('./src/assets/images/oval.png'); 
             margin-left: 5px;
         }
     }
 
     &.Read {
         background-color: hsl(0, 0%, 100%);
+    }
+
+    .Content{
+        margin-top: 13px;
+        padding: 17px 20px 20px 20px;
+        color: hsl(219, 12%, 42%);
+        border: 1px solid hsl(211, 68%, 94%);
+        border-radius: 5px;
+
+        &:hover {
+            background-color: hsl(205, 33%, 90%);
+            cursor: pointer;
+        }
     }
 }
