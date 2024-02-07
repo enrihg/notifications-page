@@ -37,7 +37,8 @@ h1 {
 
 button {
   cursor: pointer;
-  color: hsl(219, 12%, 42%);
+  /* color: hsl(219, 12%, 42%); */
+  color: hsl(219, 85%, 26%);
   border-style: none;
   background-color: initial;
   font-weight: 500;
