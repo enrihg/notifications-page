@@ -2,7 +2,7 @@
     {
         "id": 0,
         "user": "Mark Webber",
-        "pic": "/assets/images/avatar-mark-webber.webp",
+        "pic": "/notifications-page/assets/images/avatar-mark-webber.webp",
         "msg": "reacted to your recent post",
         "time": "1m",
         "content": null,
@@ -13,7 +13,7 @@
     {
         "id": 1,
         "user": "Angela Gray",
-        "pic": "/assets/images/avatar-angela-gray.webp",
+        "pic": "/notifications-page/assets/images/avatar-angela-gray.webp",
         "msg": "followed you",
         "time": "5m",
         "content": null,
@@ -24,7 +24,7 @@
     {
         "id": 2,
         "user": "Jacob Thompson",
-        "pic": "/assets/images/avatar-jacob-thompson.webp",
+        "pic": "/notifications-page/assets/images/avatar-jacob-thompson.webp",
         "msg": "has joined your group",
         "time": "1 day",
         "content": null,
@@ -35,7 +35,7 @@
     {
         "id": 3,
         "user": "Rizky Hasanuddin",
-        "pic": "/assets/images/avatar-rizky-hasanuddin.webp",
+        "pic": "/notifications-page/assets/images/avatar-rizky-hasanuddin.webp",
         "msg": "sent you a private message",
         "time": "5 days",
         "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and i'm already having lots of fun and improving my game.",
@@ -46,18 +46,18 @@
     {
         "id": 4,
         "user": "Kimberly Smith",
-        "pic": "/assets/images/avatar-kimberly-smith.webp",
+        "pic": "/notifications-page/assets/images/avatar-kimberly-smith.webp",
         "msg": "commented on your picture",
         "time": "1 week",
         "content": null,
         "link": null,
-        "commentedPic": "/assets/images/image-chess.webp",
+        "commentedPic": "/notifications-page/assets/images/image-chess.webp",
         "unread": true
     },
     {
         "id": 5,
         "user": "Nathan Peterson",
-        "pic": "/assets/images/avatar-nathan-peterson.webp",
+        "pic": "/notifications-page/assets/images/avatar-nathan-peterson.webp",
         "msg": "reacted to your recent post",
         "time": "2 weeks",
         "content": null,
@@ -68,7 +68,7 @@
     {
         "id": 6,
         "user": "Anna Kim",
-        "pic": "/assets/images/avatar-anna-kim.webp",
+        "pic": "/notifications-page/assets/images/avatar-anna-kim.webp",
         "msg": "left the group",
         "time": "2 weeks",
         "content": null,
