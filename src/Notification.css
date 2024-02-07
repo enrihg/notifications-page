@@ -44,7 +44,7 @@
         background-color: hsl(210, 60%, 98%);
 
         .Link::after {
-            content: url('./notifications-page/src/assets/images/oval.png'); 
+            content: url('/notifications-page/src/assets/images/oval.png'); 
             margin-left: 5px;
         }
     }
